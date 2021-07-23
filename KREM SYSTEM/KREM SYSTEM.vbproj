@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DFC5D24-BFB8-4BBA-858E-0CFE554D8685}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KREM_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>KREM_SYSTEM</RootNamespace>
+    <AssemblyName>KREM SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\KREM Published\Server\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-MY</TargetCulture>
+    <ProductName>KREM</ProductName>
+    <PublisherName>MMH Software Solutions</PublisherName>
+    <SuiteName>KREM Remittance System</SuiteName>
+    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KREM SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KREM SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>2019-10-22.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>164155D4C4DAC179E71085B1BD98AC2C08536F38</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KREM SYSTEM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>F:\Downloads\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.7.0.0, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.2015.Runtime.12.0.2.2402\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertDate.vb" />
+    <Compile Include="CounterDashboard.Designer.vb">
+      <DependentUpon>CounterDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CounterDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Database.vb" />
+    <Compile Include="dataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataset.vb">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPassword.Designer.vb">
+      <DependentUpon>frmAdminPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmapproval.Designer.vb">
+      <DependentUpon>frmapproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmapproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcounterlogin.Designer.vb">
+      <DependentUpon>frmcounterlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcounterlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewSender.Designer.vb">
+      <DependentUpon>frmnewSender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewSender.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerListDialog.Designer.vb">
+      <DependentUpon>frmCustomerListDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerListDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBlacklist.Designer.vb">
+      <DependentUpon>frmBlacklist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBlacklist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerList.Designer.vb">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomReport.Designer.vb">
+      <DependentUpon>frmCustomReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyReport.Designer.vb">
+      <DependentUpon>frmDailyReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.vb">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.vb">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintReceipt.Designer.vb">
+      <DependentUpon>frmPrintReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemittance.Designer.vb">
+      <DependentUpon>frmRemittance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemittance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemittanceHistory.Designer.vb">
+      <DependentUpon>frmRemittanceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemittanceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemittanceReport.Designer.vb">
+      <DependentUpon>frmRemittanceReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemittanceReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchTransaction.Designer.vb">
+      <DependentUpon>frmSearchTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsenderdetails.Designer.vb">
+      <DependentUpon>frmsenderdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsenderdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsenderlist.Designer.vb">
+      <DependentUpon>frmsenderlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsenderlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.vb">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewImage.Designer.vb">
+      <DependentUpon>frmViewImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounterDashboard.resx">
+      <DependentUpon>CounterDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPassword.resx">
+      <DependentUpon>frmAdminPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmapproval.resx">
+      <DependentUpon>frmapproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcounterlogin.resx">
+      <DependentUpon>frmcounterlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewSender.resx">
+      <DependentUpon>frmnewSender.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBlacklist.resx">
+      <DependentUpon>frmBlacklist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerListDialog.resx">
+      <DependentUpon>frmCustomerListDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintReceipt.resx">
+      <DependentUpon>frmPrintReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemittance.resx">
+      <DependentUpon>frmRemittance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchTransaction.resx">
+      <DependentUpon>frmSearchTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsenderdetails.resx">
+      <DependentUpon>frmsenderdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewImage.resx">
+      <DependentUpon>frmViewImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerDailyReportCustom.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerDailyReport.rdlc" />
+    <EmbeddedResource Include="Reports\CustomReport.rdlc" />
+    <EmbeddedResource Include="Reports\DailyReport.rdlc" />
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerList.resx">
+      <DependentUpon>frmCustomerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomReport.resx">
+      <DependentUpon>frmCustomReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyReport.resx">
+      <DependentUpon>frmDailyReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemittanceHistory.resx">
+      <DependentUpon>frmRemittanceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemittanceReport.resx">
+      <DependentUpon>frmRemittanceReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsenderlist.resx">
+      <DependentUpon>frmsenderlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrintReceipt.rdlc" />
+    <EmbeddedResource Include="Reports\PrintTransaction.rdlc" />
+    <EmbeddedResource Include="Reports\RemHistoryRange.rdlc" />
+    <EmbeddedResource Include="Reports\RemittanceHistory.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dataset.xsc">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="dataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataset.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dataset.xss">
+      <DependentUpon>dataset.xsd</DependentUpon>
+    </None>
+    <None Include="KREM SYSTEM_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-key-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-planner-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ledger-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-applicant-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accounting-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-disapprove-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hide-password-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-people-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-briefcase-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-info-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkmark-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-disapprove-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-management-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-send-hot-list-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-estimate-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-applicant-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2019-10-22.ico" />
+    <None Include="Resources\noimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.12.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2014 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
